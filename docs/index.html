@@ -114,6 +114,7 @@
             .top-section {
                 display: flex;
                 justify-content: space-between;
+                flex-direction: row;
                 margin-right: 8px;
             }
             .header {
@@ -202,16 +203,6 @@
                 color: #2980b9; 
                 text-decoration: none;
             }
-            /* Responsive design for smaller screens */
-            @media (max-width: 600px) {
-                .contact-info {
-                flex-direction: column;
-                }
-                .contact-info div {
-                width: 100%;
-                margin-bottom: 10px;
-                }
-            }
 
             /* General table styling */
             table {
@@ -251,6 +242,39 @@
                 color: #666;
                 line-height: 1.4;
             }
+
+            @media screen and (max-width: 780px) {
+              body {
+                  padding: 10px;
+              }
+              .top-section {
+                  margin-left: 12px;
+                  flex-direction: column;
+              }
+              .header {
+                color: #2980b9;
+                font-size: 2em;
+                font-weight: 600;
+                padding-bottom: 10px;
+              }
+              .sub-header {
+                font-size: 1.1em;
+                padding-bottom: 10px;
+              }
+              .contact-info {
+                margin-top: 12px;
+                flex-direction: column;
+              }
+              .contact-info div {
+                width: 100%;
+                margin-bottom: 10px;
+              }
+              .date {
+                position: relative;
+                display: block;
+              }
+            }
+
             @media print {
                 .section { page-break-before: auto; }
             }
@@ -516,7 +540,8 @@
 
     <div class="section">
       <h2 class="section-title">References</h2>
-      <ul class="sublist">
+      <li><i>References available upon request</i></li>
+      <!-- <ul class="sublist">
 
         <li><a href="https://www.linkedin.com/in/saleh-al-sharji-465332102/">Saleh Al Sharji</a></li>
         <ul class="sub-sublist">
@@ -535,7 +560,7 @@
             <li>Ex-VP HR (M.E.N.A & C), Shell Oman</li>
             <li>Member of RAHRC</li>
         </ul>
-      </ul>
+      </ul> -->
     </div>
   </body>
 </html>
