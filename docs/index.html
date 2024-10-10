@@ -243,43 +243,7 @@
                 line-height: 1.4;
             }
 
-            @media screen and (max-width: 640px) {
-              body {
-                  padding: 10px;
-              }
-              .top-section {
-                  margin-left: 12px;
-                  flex-direction: column;
-              }
-              .header {
-                color: #2980b9;
-                font-size: 1.7em;
-                font-weight: 600;
-                padding-bottom: 10px;
-              }
-              .sub-header {
-                font-size: 1em;
-                padding-bottom: 10px;
-              }
-              .contact-info {
-                font-size: 0.9em;
-                margin-top: 12px;
-                flex-direction: column;
-              }
-              .contact-info div {
-                width: 100%;
-                margin-bottom: 10px;
-              }
-              .section-title {
-                font-size: 1.3em;
-              }
-              .section {
-                font-size: 0.95em;
-                padding-bottom: 4px;
-              }
-              ul.sublist :last-child { 
-                margin-bottom: 20px
-              }
+            @media screen and (max-width: 900px) {
               .date {
                 margin-left: 0px;
                 position: relative;
@@ -287,9 +251,53 @@
               }
             }
 
-            @media print {
-                .section { page-break-before: auto; }
+            @media screen and (max-width: 720px) {
+            body {
+                padding: 10px;
             }
+            .top-section {
+                margin-left: 12px;
+                flex-direction: column;
+            }
+            .header {
+              color: #2980b9;
+              font-size: 1.7em;
+              font-weight: 600;
+              padding-bottom: 10px;
+            }
+            .sub-header {
+              font-size: 1em;
+              padding-bottom: 10px;
+            }
+            .contact-info {
+              font-size: 0.9em;
+              margin-top: 12px;
+              flex-direction: column;
+            }
+            .contact-info div {
+              width: 100%;
+              margin-bottom: 10px;
+            }
+            .section-title {
+              font-size: 1.3em;
+            }
+            .section {
+              font-size: 0.95em;
+              padding-bottom: 4px;
+            }
+            ul.sublist :last-child { 
+              margin-bottom: 20px
+            }
+            .date {
+              margin-left: 0px;
+              position: relative;
+              display: block;
+            }
+          }
+
+          @media print {
+              .section { page-break-before: auto; }
+          }
 
         </style>
     </head>
